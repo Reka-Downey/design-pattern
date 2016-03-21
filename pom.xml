@@ -95,6 +95,8 @@
 
     <build>
         <plugins>
+
+            <!-- maven子模块rebel.xml自动生成插件 -->
             <plugin>
                 <groupId>org.zeroturnaround</groupId>
                 <artifactId>jrebel-maven-plugin</artifactId>
@@ -105,6 +107,35 @@
                         <phase>process-resources</phase>
                         <goals>
                             <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- 指定maven编译时的JDK版本插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <!--<compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>-->
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+
+            <!-- 源代码生成插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <!-- 打包成jar或者war或者其他格式的分发包之前执行maven-source-plugin的goals中定义的命令 -->
+                        <phase>prepare-package</phase>
+                        <!-- 执行source:jar-no-fork命令，生成源代码的jar包 -->
+                        <goals>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
