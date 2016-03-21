@@ -12,6 +12,6 @@ public class RollsRoyce implements Car {
 
     @Override
     public String getBrand() {
-        return CarBrand.ROLLSROYCE.getName();
+        return CarBrand.ROLLS_ROYCE.getName();
     }
 }

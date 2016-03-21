@@ -13,7 +13,7 @@ import org.junbin.fmr.model.Volvo;
  */
 public enum CarBrand {
 
-    BMW("宝马", Bmw.class), VOLVO("沃尔沃", Volvo.class), ROLLSROYCE("劳斯莱斯", RollsRoyce.class);
+    BMW("宝马", Bmw.class), VOLVO("沃尔沃", Volvo.class), ROLLS_ROYCE("劳斯莱斯", RollsRoyce.class);
 
     private String name;
     private Class<?> carClazz;

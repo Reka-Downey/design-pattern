@@ -33,6 +33,7 @@ public class LaunchServlet extends HttpServlet {
         for (CarBrand carBrand : CarBrand.values()) {
             if (carBrand.getName().equals(brand)) {
                 Car car = factory.create(carBrand.getCarClazz());
+                resp.setContentType("text/html;charset=UTF-8");
                 resp.getWriter().write("内存地址：" + car.toString() + " --> 商标：" + car.getBrand());
             }
         }

@@ -45,6 +45,7 @@ public class LaunchServlet extends HttpServlet {
             throw new NoSuchElementException("尚未建立该产品的工厂！");
         }
         Telephone telephone = factory.createProduct();
+        resp.setContentType("text/html;charset=UTF-8");
         resp.getWriter().write("内存地址：" + telephone.toString() + "  -->  商标：" + telephone.getBrand());
     }
 }
