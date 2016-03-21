@@ -28,9 +28,9 @@
 <script type="text/javascript">
     $(function () {
         var fm = $("#fm");
+        var count = 1;
         fm.on("click", "#create", function (event) {
             event.stopPropagation();
-            var count = 1;
             // 除了不能直接使用$("#id:checked")外，使用find的时候还必须在id后面加上空格才能获取得到
             // 即fm.find("#brand:checked").val();中由于#brand:checked没有空格，所以获取得到的是undefined
             var phoneType = fm.find("#brand :checked").val();
@@ -42,6 +42,7 @@
                 },
                 success: function (responseText) {
                     $("#content").append("产品" + count + " --> " + responseText + "<br/>");
+                    count++;
                 }
             })
         });
