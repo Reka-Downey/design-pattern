@@ -7,10 +7,15 @@
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
         <module>simple-factory</module>
         <module>factory-method</module>
         <module>factory-method-reflection</module>
+        <module>singleton</module>
+        <module>builder</module>
+        <module>abstract-factory</module>
+        <module>immutable-builder</module>
     </modules>
 
     <name>parent Maven Webapp</name>
@@ -89,6 +94,12 @@
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
             <version>2.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.1.7.RELEASE</version>
         </dependency>
 
     </dependencies>
