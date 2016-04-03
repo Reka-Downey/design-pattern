@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>parent</artifactId>
+        <groupId>org.junbin.design-pattern</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>fly-weight</artifactId>
+    <packaging>war</packaging>
+
+    <name>fly-weight Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.2.10.v20150310</version>
+                <configuration>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <webApp>
+                        <contextPath>/fw</contextPath>
+                    </webApp>
+                    <httpConnector>
+                        <port>8787</port>
+                    </httpConnector>
+                    <stopKey>terminate</stopKey>
+                    <stopPort>7878</stopPort>
+                </configuration>
+            </plugin>
+        </plugins>
+
+        <finalName>fly-weight</finalName>
+    </build>
+</project>

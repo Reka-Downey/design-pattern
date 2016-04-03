@@ -19,6 +19,12 @@
         <module>clazz-adapter</module>
         <module>object-adapter</module>
         <module>prototype</module>
+        <module>facade</module>
+        <module>composite</module>
+        <module>decorator</module>
+        <module>fly-weight</module>
+        <module>bridge</module>
+        <module>proxy</module>
     </modules>
 
     <name>parent Maven Webapp</name>
