@@ -1,4 +1,4 @@
-package org.junbin.sf.model;
+package org.junbin.af.model;
 
 import org.junbin.sf.enumeration.FruitType;
 

@@ -9,7 +9,7 @@ import org.junbin.fmr.model.Volvo;
  * @Date : 2016-03-21 12:16
  * @Author : junbin chung
  * @Email : seraphstorm@163.com
- * @Intro : 汽车商家枚举
+ * @Intro : 汽车商家枚举《由于使用了枚举+反射，所以此时的工厂方法并不满足开闭原则》
  */
 public enum CarBrand {
 

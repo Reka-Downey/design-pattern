@@ -2,7 +2,7 @@ package org.junbin.sf.servlet;
 
 import org.junbin.sf.enumeration.FruitType;
 import org.junbin.sf.factory.FruitFactory;
-import org.junbin.sf.model.Fruit;
+import org.junbin.af.model.Fruit;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

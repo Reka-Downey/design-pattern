@@ -24,8 +24,8 @@ public class TestHouse {
         Wall wall = new Wall(WallType.AGATE);
         Window window = new Window(WindowType.CRYSTAL);
         Roof roof = new Roof(RoofType.THULIUM);
-        House house = new House.HouseBuilder().assembleDoor(door).appendDescription(null)
-                .assembleRoof(roof).assembleWall(wall).assembleWindow(window).create();
+        House house = new House.HouseBuilder().door(door).description(null)
+                .roof(roof).wall(wall).window(window).create();
         System.out.println("内存：" + house.toString() + " --> 信息：" + house.info());
         door = house.getDoor();
         door.setType(DoorType.STONE);

@@ -42,8 +42,8 @@ public class LaunchServlet extends HttpServlet {
         String wallType = req.getParameter("wallType");
         String roofType = req.getParameter("wallType");
         String description = req.getParameter("description");
-        House house = new House.HouseBuilder().assembleDoor(doorType).assembleWall(wallType).assembleRoof(roofType)
-                .assembleWindow(windowType).appendDescription(description).create();
+        House house = new House.HouseBuilder().door(doorType).wall(wallType).roof(roofType)
+                .window(windowType).description(description).create();
         resp.setContentType("text/html;charset=UTF-8");
         resp.getWriter().write("内存地址：" + house + "<br/> --> 信息：" + house.info());
     }

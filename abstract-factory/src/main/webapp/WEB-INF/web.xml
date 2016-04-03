@@ -5,5 +5,13 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
+    <servlet>
+        <servlet-name>Launch</servlet-name>
+        <servlet-class>org.junbin.af.servlet.LaunchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Launch</servlet-name>
+        <url-pattern>/launch</url-pattern>
+    </servlet-mapping>
 
 </web-app>

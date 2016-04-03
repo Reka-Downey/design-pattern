@@ -16,6 +16,8 @@
         <module>builder</module>
         <module>abstract-factory</module>
         <module>immutable-builder</module>
+        <module>clazz-adapter</module>
+        <module>object-adapter</module>
     </modules>
 
     <name>parent Maven Webapp</name>

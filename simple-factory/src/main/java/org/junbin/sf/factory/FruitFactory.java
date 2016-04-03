@@ -1,10 +1,10 @@
 package org.junbin.sf.factory;
 
 import org.junbin.sf.enumeration.FruitType;
-import org.junbin.sf.model.Apple;
-import org.junbin.sf.model.Fruit;
-import org.junbin.sf.model.Grape;
-import org.junbin.sf.model.Strawberry;
+import org.junbin.af.model.Apple;
+import org.junbin.af.model.Fruit;
+import org.junbin.af.model.Grape;
+import org.junbin.af.model.Strawberry;
 
 import java.util.NoSuchElementException;
 

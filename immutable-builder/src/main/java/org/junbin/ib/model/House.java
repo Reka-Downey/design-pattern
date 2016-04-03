@@ -78,22 +78,22 @@ public final class House {
         public HouseBuilder() {
         }
 
-        public HouseBuilder assembleDoor(Door door) {
+        public HouseBuilder door(Door door) {
             this.door = door.clone();
             return this;
         }
 
-        public HouseBuilder assembleWindow(Window window) {
+        public HouseBuilder window(Window window) {
             this.window = window.clone();
             return this;
         }
 
-        public HouseBuilder assembleRoof(Roof roof) {
+        public HouseBuilder roof(Roof roof) {
             this.roof = roof.clone();
             return this;
         }
 
-        public HouseBuilder assembleWall(String wallType) {
+        public HouseBuilder wall(String wallType) {
             for (WallType type : WallType.values()) {
                 if (type.getName().equals(wallType)) {
                     this.wall = new Wall(type);
@@ -103,7 +103,7 @@ public final class House {
             throw new NoSuchElementException("不存在该类型的墙壁！");
         }
 
-        public HouseBuilder assembleDoor(String doorType) {
+        public HouseBuilder door(String doorType) {
             for (DoorType type : DoorType.values()) {
                 if (type.getName().equals(doorType)) {
                     this.door = new Door(type);
@@ -113,7 +113,7 @@ public final class House {
             throw new NoSuchElementException("不存在该类型的大门！");
         }
 
-        public HouseBuilder assembleWindow(String windowType) {
+        public HouseBuilder window(String windowType) {
             for (WindowType type : WindowType.values()) {
                 if (type.getName().equals(windowType)) {
                     this.window = new Window(type);
@@ -123,7 +123,7 @@ public final class House {
             throw new NoSuchElementException("不存在该类型的窗户！");
         }
 
-        public HouseBuilder assembleRoof(String roofType) {
+        public HouseBuilder roof(String roofType) {
             for (RoofType type : RoofType.values()) {
                 if (type.getName().equals(roofType)) {
                     this.roof = new Roof(type);
@@ -133,12 +133,12 @@ public final class House {
             throw new NoSuchElementException("不存在该类型的屋顶！");
         }
 
-        public HouseBuilder assembleWall(Wall wall) {
+        public HouseBuilder wall(Wall wall) {
             this.wall = wall.clone();
             return this;
         }
 
-        public HouseBuilder appendDescription(String option) {
+        public HouseBuilder description(String option) {
             if (!StringUtils.isEmpty(option)) {
                 this.description = option;
             }
