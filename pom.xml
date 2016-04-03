@@ -18,6 +18,7 @@
         <module>immutable-builder</module>
         <module>clazz-adapter</module>
         <module>object-adapter</module>
+        <module>prototype</module>
     </modules>
 
     <name>parent Maven Webapp</name>
